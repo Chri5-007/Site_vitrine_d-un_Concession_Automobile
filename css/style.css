@@ -1,0 +1,163 @@
+/* ==========================================================
+   Kingdom's Cars — feuille de style
+   Palette : bleu (#5085b9) sur fond clair
+   ========================================================== */
+
+:root {
+  --bleu: #5085b9;
+  --bleu-clair: rgba(80, 133, 185, 0.25);
+}
+
+/* ===== NAVIGATION ===== */
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+}
+
+/* Soulignement blanc animé au survol */
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+/* ===== PAGES (accueil / véhicules / à propos / contact) ===== */
+.hidden-section {
+  display: none;
+}
+
+.hidden-section.active {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 500;
+  background: #fff;
+  width: 100%;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ===== CARTES VÉHICULES ===== */
+/* Entrée en fondu/glissement ; "backwards" pour ne pas figer la transformation
+   et laisser fonctionner l'effet de survol. */
+.card {
+  animation: slideUp 0.6s ease-out backwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px var(--bleu-clair) !important;
+}
+
+/* Lueur bleue au survol */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(80, 133, 185, 0.1) 0%, transparent 100%);
+  opacity: 0;
+  border-radius: inherit;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+/* Zoom de l'image au survol (l'image est rognée par overflow-hidden) */
+.card-img-top {
+  transition: transform 0.4s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.08);
+}
+
+.card-title {
+  transition: color 0.3s ease;
+}
+
+.card:hover .card-title {
+  color: var(--bleu) !important;
+}
+
+/* Bouton dans une carte */
+.card .btn {
+  transition: all 0.3s ease;
+}
+
+.card:hover .btn {
+  background-color: var(--bleu) !important;
+  border-color: var(--bleu) !important;
+  color: #fff !important;
+}
+
+/* ===== BOUTONS ===== */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: var(--bleu) !important;
+  border-color: var(--bleu) !important;
+  color: #fff !important;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px var(--bleu-clair) !important;
+}
+
+/* ===== ACCESSIBILITÉ : réduire les animations si demandé ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

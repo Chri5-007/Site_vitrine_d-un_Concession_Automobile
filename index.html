@@ -1,0 +1,823 @@
+
+        <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,0">
+        <title>Kingdom's Cars – Concession automobile de prestige</title>
+        <link rel="stylesheet" href="css/style.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    </head>
+    <body>
+        
+        <!--HEADER-->
+
+                            <!--NAVBAR-->
+            <nav class="navbar navbar-expand-lg  bg-transparent fixed-top" style="z-index: 1000;">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bold d-flex align-items-center" href="#" data-page="page-home" style="color:#5085B9;">
+                        <i class="bi bi-car-front-fill me-2" style="color: #5085B9;"></i>
+                        KINGDOM'S CARS
+                    </a>
+                    
+
+
+
+                    <!-- TOGGLER MOBILE -->
+                    <button class="navbar-toggler d-lg-none" 
+                        type="button"  
+                        style="border: none;"
+                        data-bs-toggle="offcanvas" 
+                        data-bs-target="#offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+                    <!-- MENU DESKTOP (PILULE BLEUE) -->
+                        <div class="collapse navbar-collapse d-none d-lg-block">
+                            <ul class="navbar-nav flex-row gap-0 rounded-pill px-0 py-0  ms-auto" style="background-color: #5085B9; font-weight: 600;">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white mx-lg-2" data-page="page-home" href="#">Accueil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white mx-lg-2" data-page="page-vehicles"  href="#">Véhicules</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white mx-lg-2" href="#" data-page="page-about">À propos</a>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn ms-3"
+                                style="--bs-btn-padding-y: .60rem; --bs-btn-padding-x: .60rem; --bs-btn-font-size: .80rem; border-radius: 20px; background-color: #5085B9; font-weight: 600; color: rgb(247, 243, 243);" data-page="page-contact">
+                                NOUS CONTACTER
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+
+
+
+                <!-- OFFCANVAS MOBILE (SOMBRE, SORT DE DROITE) -->
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex flex-column align-items-center justify-content-center gap-5">
+                        <ul class="navbar-nav text-center gap-5">
+                            <li class="nav-item">
+                                <a class="nav-link text-white fs-3 fw-bold " data-page="page-home" href="#">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white fs-3 fw-bold " data-page="page-vehicles" href="#">Véhicules</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white fs-3 fw-bold " data-page="page-about" href="#">À propos</a>
+                            </li>
+                        </ul>
+                        <button type="button" class=" btn-light rounded-pill px-4 py-2 fw-bold" data-page="page-contact">
+                            NOUS CONTACTER
+                        </button>
+                    </div>
+                </div>
+
+    <!--HERO-->
+
+            <section class="hero position-relative" style="display:flex; flex-direction: column; height: 150vh; width: 100%; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/CAR.jpg') center/cover fixed; " data-parallax="true">
+        
+        <div style="margin-top: 120px; padding-left: 0;">
+            <p class="h1 text-uppercase fw-bold mb-3 display-2" style="color: #7fa3ce; letter-spacing: 4px;">Kingdom's Cars</p>
+        </div>
+        
+        <div style="margin-top: 50px; padding-left: 0px; padding-right: 200px;margin-bottom: 0;padding-bottom: 0;">
+            <p class="h3 mb-3 fw-semibold display-4" style="color: #eceef0; letter-spacing: 2px;">Bienvenue au Royaume de l'Automobile</p>
+            <p class="h4 mb-4" style="color: #eceef0;">Au sein de Kingdom's Cars, nous sélectionnons uniquement des véhicules d'exception.</p>
+        </div>
+        
+        <div class="d-grid gap-2 d-md-block" style="margin-top:60px;">
+            <button class="btn btn-primary" data-page="page-contact" style="margin-left: 10px; margin-right: 30px; background-color: #5085B9; color: white; border-radius: 16px; font-weight: 600; z-index: 3;" type="button">NOUS CONTACTER</button>
+        </div>
+    </section>
+                        
+                <!--services-->
+            <section class="services py-5" style="background-color: rgb(200, 220, 220);padding: 80px 0;">
+                <div class="container">
+                    <p class="h2  display-4 fw-bold mb-5">Nos Services</p>
+                    
+                    <div class="row g-5">
+                    <hr>
+                <!-- Service 1 -->
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div>
+                        <p class="text-muted fw-bold mb-2">01</p>
+                        <h4 class=" h1 fw-normal mb-5 mt-1">Votre rêve automobile</h4>
+                        <p class=" h5 text-muted mb-5">Des véhicules d'exception pour des passionnés exigeants. Chaque auto est une promesse de performance et d'élégance. Trouvez la voiture qui incarne votre style de vie.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/ps.jpg" class="img-thumbnail rounded-4" alt="Service 1">
+                </div>
+                <hr>
+                
+                <!-- Service 2 -->
+                <div class="col-lg-6">
+                    <img src="images/ga.jpg" class="img-thumbnail rounded-4" alt="Service 2">
+                </div>
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div>
+                        <p class="text-muted fw-bold mb-2">02</p>
+                        <h4 class="h1 fw-normal mb-5 mt-1">Pérennité et performance</h4>
+                        <p class="h5 text-muted mb-5">Gardez votre véhicule au summum de sa puissance. Nos techniciens experts assurent un entretien irréprochable et des réparations précises. Votre sécurité, notre priorité.</p>
+                    </div>
+                </div>
+                <hr>
+                <!-- Service 3 -->
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div>
+                        <p class="text-muted fw-bold mb-2">03</p>
+                        <h4 class="h1 fw-normal mb-5 mt-1">Flexibilité sans compromis</h4>
+                        <p class="h5 text-muted mb-5">Réalisez votre rêve sans contrainte. Crédits avantageux, leasing flexible, reprises valorisées. Des solutions pensées pour vous, sans prise de tête.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/dream.jpg" class="img-thumbnail rounded-4" alt="Service 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+            </section>
+            
+                                    <!-- SECTION À PROPOS -->
+    <section id="about" class="py-5" style="background: linear-gradient(135deg, #f5f9fb 0%, #f0f7f9 100%);">
+        <div class="container-fluid">
+            <div class="row align-items-center g-0">
+                <!-- Colonne gauche - Images 60% -->
+                <div class="col-lg-7 mb-5 mb-lg-0 position-relative overflow-visible" style="height: 700px; width: 60%;">
+                    <!-- Image 1 (dessous) AU BORD DE LA PAGE -->
+                    <img src="images/sell.jpg" class="img-fluid rounded-4 position-absolute" alt="À propos" 
+                        style="width: 610px; height: 550px; object-fit: cover; top: 50px;right: 200px; left: 2px; z-index: 1;">
+                    
+                    <!-- Image 2 (dessus) au milieu/fin de l'image 1 -->
+                    <img src="images/luxe.jpg" class="img-thumbnail rounded-4 position-absolute shadow-lg" alt="À propos" 
+                        data-parallax="true"
+                        style="width: 310px; height: 290px; object-fit: cover; top: 190px;right: 5px; z-index: 2;">
+                </div>
+
+                <!-- Colonne droite - Texte 40% -->
+                <div class="col-lg-5 ps-lg-5 d-flex align-items-center" style="width: 40%; padding: 50px;">
+                    <div>
+                        <h2 class="mb-4 fw-bold" style="font-size: 2.5rem; color: #1a1a1a;">À propos</h2>
+                        
+                        <p class="mb-3" style="font-size: 1.1rem; line-height: 1.8; color: #666;">
+                            Bienvenue chez Kingdom's Cars, votre partenaire de confiance depuis plus de 15 ans. Nous sommes spécialisés dans la vente de véhicules d'occasion premium et neufs de prestige.
+                        </p>
+                        
+                        <button class="btn btn-dark btn-lg" style="background-color: #1a1a1a; border: none;">
+                            Lire plus
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+            <!-- SECTION TÉMOIGNAGES -->
+    <section class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold" style="font-size: 2.5rem;">Témoignages</h2>
+            
+            <div class="row g-4">
+        <!-- Témoignage 1 -->
+        <div class="col-lg-6">
+            <div class="card border-0 rounded-4 shadow-sm p-4" style="background-color: #fff; min-height: 280px;">
+                <div class="d-flex align-items-start mb-3">
+                    <span class="rounded-circle" style="width: 12px; height: 12px; background-color: #000; margin-right: 12px; margin-top: 4px;"></span>
+                    <div>
+                        <h5 class="fw-bold mb-0">Thomas Morel</h5>
+                        <p class="text-muted small mb-0">Client particulier</p>
+                    </div>
+                </div>
+                <p class="text-muted" style="font-size: 0.95rem; line-height: 1.6;">
+                « J'ai trouvé la voiture idéale grâce aux conseils de l'équipe. L'accueil a été chaleureux et toutes mes questions ont reçu une réponse claire. »
+                </p>
+            </div>
+        </div>
+
+        <!-- Témoignage 2 -->
+        <div class="col-lg-6">
+            <div class="card border-0 rounded-4 shadow-sm p-4" style="background-color: #fff; min-height: 280px;">
+                <div class="d-flex align-items-start mb-3">
+                    <span class="rounded-circle" style="width: 12px; height: 12px; background-color: #000; margin-right: 12px; margin-top: 4px;"></span>
+                    <div>
+                        <h5 class="fw-bold mb-0">Nadia Benali</h5>
+                        <p class="text-muted small mb-0">Entrepreneure</p>
+                    </div>
+                </div>
+                <p class="text-muted" style="font-size: 0.95rem; line-height: 1.6;">
+                    « Une expérience d'achat simple et rapide. Le véhicule était conforme à la description et parfaitement préparé pour la livraison. »
+                </p>
+            </div>
+        </div>
+
+        <!-- Témoignage 3 -->
+        <div class="col-lg-6">
+            <div class="card border-0 rounded-4 shadow-sm p-4" style="background-color: #fff; min-height: 280px;">
+                <div class="d-flex align-items-start mb-3">
+                    <span class="rounded-circle" style="width: 12px; height: 12px; background-color: #000; margin-right: 12px; margin-top: 4px;"></span>
+                    <div>
+                        <h5 class="fw-bold mb-0">Julien Lefèvre</h5>
+                        <p class="text-muted small mb-0">Ingénieur</p>
+                    </div>
+                </div>
+                <p class="text-muted" style="font-size: 0.95rem; line-height: 1.6;">
+                « Excellent service du premier contact jusqu'à la remise des clés. Je recommande cette concession pour son professionnalisme et sa transparence. »
+                </p>
+            </div>
+        </div>
+
+        <!-- Témoignage 4 -->
+        <div class="col-lg-6">
+            <div class="card  border-0 rounded-4 shadow-sm p-4" style="background-color: #fff; min-height: 280px;">
+                <div class="d-flex align-items-start mb-3">
+                    <span class="rounded-circle" style="width: 12px; height: 12px; background-color: #000; margin-right: 12px; margin-top: 4px;"></span>
+                    <div>
+                        <h5 class="fw-bold mb-0">Sophie Martin</h5>
+                        <p class="text-muted small mb-0">Actrice</p>
+                    </div>
+                </div>
+                <p class="text-muted" style="font-size: 0.95rem; line-height: 1.6;">
+                « Très satisfaite de mon achat. L'équipe a pris le temps de comprendre mes besoins et de me proposer le véhicule qui me correspondait. »
+                </p>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+
+
+
+            <section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- FAQ -->
+            <div class="col-lg-6">
+                <h1 class="mb-4 fw-light" style="font-size: 2.5rem;">Questions fréquemment posées</h1>
+                
+                <div class="accordion accordion-flush" id="faqAccordion">
+                    <!-- Question 1 -->
+                    <div class="accordion-item border">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
+                                Quels documents sont nécessaires pour acheter un véhicule ?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="text-muted mb-3">
+                                    Pour finaliser l'achat d'un véhicule, vous devrez présenter une pièce d'identité valide, un justificatif de domicile récent et les documents liés au financement si nécessaire. Notre équipe vous accompagne à chaque étape du processus.
+                                </p>
+                                <div class="d-flex gap-3">
+                                    <a href="#" class="text-dark text-decoration-none fw-bold">f</a>
+                                    <a href="#" class="text-dark text-decoration-none fw-bold">𝕏</a>
+                                    <a href="#" class="text-dark text-decoration-none fw-bold">in</a>
+                                    <a href="#" class="text-dark text-decoration-none fw-bold">🔗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="accordion-item border">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                Proposez-vous des solutions de financement ?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="text-muted">
+                                    Oui, nous proposons plusieurs solutions de financement adaptées à votre budget. Nos conseillers sont à votre disposition pour vous aider à choisir l'offre qui correspond le mieux à vos besoins.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="accordion-item border">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                Puis-je essayer un véhicule avant de l'acheter ?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p class="text-muted">
+                                    Bien sûr. Nous proposons des essais routiers afin que vous puissiez découvrir le confort, les performances et les équipements du véhicule avant de prendre votre décision.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Section -->
+            <div class="col-lg-6">
+                <div class="rounded-4 d-flex align-items-center justify-content-center">
+                    <img src="images/9.jpg" style="border-radius: 8px;height: 450px;width: 550px;" alt="Concession automobile" class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+        
+
+
+                <!-- PAGE VÉHICULES (CACHÉE) -->
+            <div id="page-vehicles" class="hidden-section fade-in">
+                <section class="py-5" style="background-color: #f8f9fa; min-height: 100vh;">
+        <div class="container">
+            <h1 class="mb-5 fw-bold" style="font-size: 3rem; color: #1a1a1a;">Nos Véhicules</h1>
+            <p class="mb-5" style="font-size: 1.1rem; color: #666;">Découvrez notre sélection exclusive de véhicules premium</p>
+            
+            <div class="row g-4">
+                <!-- Véhicule 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 rounded-4 shadow-sm overflow-hidden h-100">
+                        <img src="images/gle.jpg" class="card-img-top" alt="Véhicule 1" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" style="color: #5085B9;">Mercedes-Benz GLE</h5>
+                            <p class="text-muted mb-3">SUV Luxe - 2022</p>
+                            <p class="card-text mb-3">Moteur 3,0 L Diesel, 272 ch, Intérieur cuir premium, Système audio Burmester</p>
+                            <p class="fw-bold" style="color: #5085B9; font-size: 1.2rem;">85 000€</p>
+                            <button class="btn btn-outline-primary w-100" style="border-color: #5085B9; color: #5085B9;">En savoir plus</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Véhicule 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 rounded-4 shadow-sm overflow-hidden h-100">
+                        <img src="images/bmw.jpg" class="card-img-top" alt="Véhicule 2" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" style="color: #5085B9;">BMW Serie 7</h5>
+                            <p class="text-muted mb-3">Berline Prestige - 2023</p>
+                            <p class="card-text mb-3">Moteur 4,4 L Twin-Turbo, 523 ch, Écran tactile 12,3", Toit panoramique</p>
+                            <p class="fw-bold" style="color: #5085B9; font-size: 1.2rem;">120 000€</p>
+                            <button class="btn btn-outline-primary w-100" style="border-color: #5085B9; color: #5085B9;">En savoir plus</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Véhicule 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 rounded-4 shadow-sm overflow-hidden h-100">
+                        <img src="images/q8.jpg" class="card-img-top" alt="Véhicule 3" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold" style="color: #5085B9;">Audi Q8</h5>
+                            <p class="text-muted mb-3">SUV Coupé - 2021</p>
+                            <p class="card-text mb-3">Moteur 3,0 L TDI, 286 ch, Quattro AWD, Suspension pneumatique adaptative</p>
+                            <p class="fw-bold" style="color: #5085B9; font-size: 1.2rem;">95 000€</p>
+                            <button class="btn btn-outline-primary w-100" style="border-color: #5085B9; color: #5085B9;">En savoir plus</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4">
+    <!-- Véhicule 1 -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card border-0 rounded-4 shadow-sm overflow-hidden h-100">
+            <img src="images/bent.jpg" class="card-img-top" alt="Véhicule 1" style="height: 250px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title fw-bold" style="color: #5085B9;">Bentley Flying Spur</h5>
+                <p class="text-muted mb-3">Berline Ultra-Luxe - 2023</p>
+                <p class="card-text mb-3">Moteur 6,0 L Twin-Turbo W12, 635 ch, Cuir Connolly, Système audio Naim 2200W</p>
+                <p class="fw-bold" style="color: #5085B9; font-size: 1.2rem;">280 000€</p>
+                <button class="btn btn-outline-primary w-100" style="border-color: #5085B9; color: #5085B9;">En savoir plus</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Véhicule 2 -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card border-0 rounded-4 shadow-sm overflow-hidden h-100">
+            <img src="images/rr.jpg" class="card-img-top" alt="Véhicule 2" style="height: 250px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title fw-bold" style="color: #5085B9;">Rolls-Royce Ghost</h5>
+                <p class="text-muted mb-3">Berline Royale - 2023</p>
+                <p class="card-text mb-3">Moteur 6,75 L Twin-Turbo V12, 571 ch, Intérieur sur-mesure, Suspension air adaptative</p>
+                <p class="fw-bold" style="color: #5085B9; font-size: 1.2rem;">350 000€</p>
+                <button class="btn btn-outline-primary w-100" style="border-color: #5085B9; color: #5085B9;">En savoir plus</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Véhicule 3 -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card border-0 rounded-4 shadow-sm overflow-hidden h-100">
+            <img src="images/fefe.jpg" class="card-img-top" alt="Véhicule 3" style="height: 250px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title fw-bold" style="color: #5085B9;">Ferrari F8 Tributo</h5>
+                <p class="text-muted mb-3">Sportive Italienne - 2021</p>
+                <p class="card-text mb-3">Moteur 3,9 L V8 Biturbo, 720 ch, 0-100 en 2,9 s, Transmission DCT 7 vitesses</p>
+                <p class="fw-bold" style="color: #5085B9; font-size: 1.2rem;">280 000€</p>
+                <button class="btn btn-outline-primary w-100" style="border-color: #5085B9; color: #5085B9;">En savoir plus</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Véhicule 4 -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card border-0 rounded-4 shadow-sm overflow-hidden h-100">
+            <img src="images/ms.jpg" class="card-img-top" alt="Véhicule 4" style="height: 250px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title fw-bold" style="color: #5085B9;">Maserati MC20</h5>
+                <p class="text-muted mb-3">Hypercar - 2022</p>
+                <p class="card-text mb-3">Moteur 3,0 L V6 Twin-Turbo, 630 ch, 0-100 en 2,85 s, Vitesse max 325 km/h</p>
+                <p class="fw-bold" style="color: #5085B9; font-size: 1.2rem;">310 000€</p>
+                <button class="btn btn-outline-primary w-100" style="border-color: #5085B9; color: #5085B9;">En savoir plus</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Véhicule 5 -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card border-0 rounded-4 shadow-sm overflow-hidden h-100">
+            <img src="images/m600.jpg" class="card-img-top" alt="Véhicule 5" style="height: 250px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title fw-bold" style="color: #5085B9;">Maybach S 680</h5>
+                <p class="text-muted mb-3">Berline Prestige - 2023</p>
+                <p class="card-text mb-3">Moteur 6,0 L V12 Biturbo, 621 ch, Empattement rallongé 15cm, Climatisation 4 zones</p>
+                <p class="fw-bold" style="color: #5085B9; font-size: 1.2rem;">195 000€</p>
+                <button class="btn btn-outline-primary w-100" style="border-color: #5085B9; color: #5085B9;">En savoir plus</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Véhicule 6 -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card border-0 rounded-4 shadow-sm overflow-hidden h-100">
+            <img src="images/GT.jpg" class="card-img-top" alt="Véhicule 6" style="height: 250px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title fw-bold" style="color: #5085B9;">Bentley Continental GT</h5>
+                <p class="text-muted mb-3">Grand Tourer - 2022</p>
+                <p class="card-text mb-3">Moteur 6,0 L Twin-Turbo W12, 635 ch, Toit panoramique ouvrant, Intérieur bois massif</p>
+                <p class="fw-bold" style="color: #5085B9; font-size: 1.2rem;">250 000€</p>
+                <button class="btn btn-outline-primary w-100" style="border-color: #5085B9; color: #5085B9;">En savoir plus</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Véhicule 7 -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card border-0 rounded-4 shadow-sm overflow-hidden h-100">
+            <img src="images/bc.jpg" class="card-img-top" alt="Véhicule 7" style="height: 250px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title fw-bold" style="color: #5085B9;">Bugatti Chiron</h5>
+                <p class="text-muted mb-3;">Hypercar Extrême - 2021</p>
+                <p class="card-text mb-3">Moteur 8,0 L W16 Quad-Turbo, 1500 ch, 0-100 en 2,4 s, Vitesse max 490 km/h</p>
+                <p class="fw-bold" style="color: #5085B9; font-size: 1.2rem;">2 500 000€</p>
+                <button class="btn btn-outline-primary w-100" style="border-color: #5085B9; color: #5085B9;">En savoir plus</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Véhicule 8 -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card border-0 rounded-4 shadow-sm overflow-hidden h-100">
+            <img src="images/rrc.jpg" class="card-img-top" alt="Véhicule 8" style="height: 250px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title fw-bold" style="color: #5085B9;">Rolls-Royce Phantom</h5>
+                <p class="text-muted mb-3">Berline Suprême - 2023</p>
+                <p class="card-text mb-3">Moteur 6,75 L Twin-Turbo V12, 563 ch, Toit en fibre de carbone, Intérieur cuir cachemire</p>
+                <p class="fw-bold" style="color: #5085B9; font-size: 1.2rem;">450 000€</p>
+                <button class="btn btn-outline-primary w-100" style="border-color: #5085B9; color: #5085B9;">En savoir plus</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Véhicule 9 -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card border-0 rounded-4 shadow-sm overflow-hidden h-100">
+            <img src="images/pg.jpg" class="card-img-top" alt="Véhicule 9" style="height: 250px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title fw-bold" style="color: #5085B9;">Pagani Huayra</h5>
+                <p class="text-muted mb-3">Hypercar Artisanale - 2022</p>
+                <p class="card-text mb-3">Moteur 6,0 L Twin-Turbo V12, 764 ch, 0-100 en 2,8 s, Carrosserie monocoque en carbone</p>
+                <p class="fw-bold" style="color: #5085B9; font-size: 1.2rem;">1 800 000€</p>
+                <button class="btn btn-outline-primary w-100" style="border-color: #5085B9; color: #5085B9;">En savoir plus</button>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+    </section>
+
+    <!-- Newsletter en footer de Véhicules -->
+    <section class="py-5" style="background: linear-gradient(135deg, #5085B9 0%, #3d5f8a 100%); color: white;">
+        <div class="container text-center">
+            <h3 class="mb-3 fw-bold">Abonnez-vous à notre newsletter</h3>
+            <p class="mb-4">Recevez les dernières offres et actualités de Kingdom's Cars</p>
+            <div class="d-flex gap-2 justify-content-center">
+                <input type="email" class="form-control" placeholder="Votre email" style="max-width: 400px;">
+                <button class="btn btn-light fw-bold">S'abonner</button>
+            </div>
+        </div>
+    </section>
+            </div>
+
+            <!-- PAGE À PROPOS (CACHÉE) -->
+            <div id="page-about" class="hidden-section fade-in">
+                <section class="py-5" style="background: linear-gradient(135deg, #f5f9fb 0%, #f0f7f9 100%); min-height: 100vh;">
+        <div class="container-fluid">
+            <!-- Section 1: Présentation -->
+            <div class="row align-items-center g-0 mb-5">
+                <div class="col-lg-7 mb-5 mb-lg-0 position-relative overflow-visible" style="height: 600px; width: 60%;">
+                    <img src="images/bureau.jpg" class="img-fluid rounded-4 position-absolute" alt="Bureau Kingdom's Cars" 
+                        style="width: 550px; height: 450px; object-fit: cover; top: 50px; right: 200px; left: 2px; z-index: 1;">
+                    <img src="images/team.jpg" class="img-thumbnail rounded-4 position-absolute shadow-lg" alt="Notre équipe" 
+                        style="width: 280px; height: 280px; object-fit: cover; top: 150px; right: 5px; z-index: 2;">
+                </div>
+
+                <div class="col-lg-5 ps-lg-5 d-flex align-items-center" style="width: 40%; padding: 50px;">
+                    <div>
+                        <h2 class="mb-4 fw-bold" style="font-size: 2.5rem; color: #1a1a1a;">Notre Histoire</h2>
+                        <p class="mb-3" style="font-size: 1.1rem; line-height: 1.8; color: #666;">
+                            Fondée en 2008, Kingdom's Cars est devenue l'une des plus grandes concessions automobiles de prestige en Europe. Notre passion pour l'excellence nous pousse à sélectionner uniquement les véhicules les plus exceptionnels.
+                        </p>
+                        <p style="font-size: 1.1rem; line-height: 1.8; color: #666;">
+                            Avec plus de 15 ans d'expérience, nous avons développé une expertise incomparable dans le marché des véhicules premium et de luxe.
+                        </p>
+                    </div>
+                </div>
+            </div>
+ 
+    
+    </section>
+            </div>
+
+            <!-- PAGE CONTACT (CACHÉE) -->
+            <div id="page-contact" class="hidden-section fade-in">
+                <section class="py-5" style="background-color: #f8f9fa; min-height: 100vh;">
+        <div class="container-fluid">
+            <div class="row g-5 align-items-start">
+                <!-- Formulaire -->
+                <div class="col-lg-6">
+                    <div style="padding: 50px;">
+                        <h1 class="mb-4 fw-bold" style="font-size: 2.5rem; color: #1a1a1a;">Contactez-nous</h1>
+                        
+                        <form>
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold mb-2">Prénom *</label>
+                                    <input type="text" class="form-control" placeholder="Votre prénom" style="border: none; border-bottom: 2px solid #ddd;">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold mb-2">Nom *</label>
+                                    <input type="text" class="form-control" placeholder="Votre nom" style="border: none; border-bottom: 2px solid #ddd;">
+                                </div>
+                            </div>
+ 
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold mb-2">E-mail *</label>
+                                    <input type="email" class="form-control" placeholder="votre@email.com" style="border: none; border-bottom: 2px solid #ddd;">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold mb-2">Téléphone</label>
+                                    <input type="tel" class="form-control" placeholder="+41 XX XXX XX XX" style="border: none; border-bottom: 2px solid #ddd;">
+                                </div>
+                            </div>
+ 
+                            <div class="mb-4">
+                                <label class="form-label fw-bold mb-2">Objet</label>
+                                <input type="text" class="form-control" placeholder="Sujet de votre demande" style="border: none; border-bottom: 2px solid #ddd;">
+                            </div>
+ 
+                            <div class="mb-4">
+                                <label class="form-label fw-bold mb-2">Message</label>
+                                <textarea class="form-control" rows="5" placeholder="Votre message..." style="border: none; border-bottom: 2px solid #ddd; resize: none;"></textarea>
+                            </div>
+ 
+                            <button type="submit" class="btn fw-bold" style="background-color: #5085B9; color: white; padding: 10px 30px; border-radius: 20px;">
+                                Envoyer
+                            </button>
+                        </form>
+                    </div>
+                </div>
+ 
+                <!-- Infos de contact -->
+                <div class="col-lg-6">
+                    <div style="padding: 50px; background: white; border-radius: 20px;">
+                        <h3 class="fw-bold mb-5" style="color: #1a1a1a;">Informations</h3>
+ 
+                        <div class="mb-4">
+                            <h5 class="fw-bold mb-2" style="color: #5085B9;">📍 Adresse</h5>
+                            <p class="text-muted">Avenue de la Concorde 123<br>1200 Genève, Suisse</p>
+                        </div>
+ 
+                        <div class="mb-4">
+                            <h5 class="fw-bold mb-2" style="color: #5085B9;">📞 Téléphone</h5>
+                            <p class="text-muted">+41 22 123 45 67<br>Lun-Ven: 09:00 - 19:00<br>Sam: 10:00 - 18:00</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5 class="fw-bold mb-2" style="color: #5085B9;">✉️ E-mail</h5>
+                            <p class="text-muted">contact@kingdomscars.ch<br>ventes@kingdomscars.ch</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5 class="fw-bold mb-2" style="color: #5085B9;">🕐 Horaires</h5>
+                            <p class="text-muted">Lundi - Vendredi: 9:00 - 19:00<br>Samedi: 10:00 - 18:00<br>Dimanche: Fermé</p>
+                        </div>
+
+                        <hr>
+
+                        <h5 class="fw-bold mb-3" style="color: #5085B9;">Suivez-nous</h5>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="text-dark text-decoration-none fw-bold">f</a>
+                            <a href="#" class="text-dark text-decoration-none fw-bold">𝕏</a>
+                            <a href="#" class="text-dark text-decoration-none fw-bold">in</a>
+                            <a href="#" class="text-dark text-decoration-none fw-bold">ig</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+            </div>
+            
+
+        <!-- ========== NEWSLETTER + FOOTER ========== -->
+<section style="background-color: #1a1f2e; color: white;">
+    <!-- Newsletter Section -->
+    <div style="padding: 80px 0; border-bottom: 1px solid #333;">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Logo/Brand -->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="rounded-circle" style="width: 60px; height: 60px; background-color: white;"></div>
+                        <h2 class="fw-bold mb-0" style="font-size: 1.8rem;">KINGDOM'S CARS</h2>
+                    </div>
+                </div>
+
+                <!-- Formulaire Newsletter -->
+                <div class="col-lg-8">
+                    <h3 class="mb-4 fw-bold" style="font-size: 1.5rem;">S'abonner à notre newsletter</h3>
+                    
+                    <form>
+                        <div class="mb-4">
+                            <label class="form-label fw-bold mb-2">E-mail *</label>
+                            <input type="email" class="form-control" placeholder="Votre email" 
+                                style="background-color: #1a1f2e; border: 1px solid #555; color: white; padding: 15px; font-size: 1rem;">
+                        </div>
+
+                        <div class="mb-4 d-flex gap-2 align-items-center">
+                            <input type="checkbox" id="newsletter-check" style="width: 20px; height: 20px;">
+                            <label for="newsletter-check" class="mb-0 fw-normal">
+                                Oui, je veux m'abonner à votre newsletter. *
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn fw-bold" style="background-color: white; color: #1a1f2e; padding: 12px 40px; border-radius: 8px; font-size: 1rem;">
+                            ENVOYER
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="padding: 60px 0;">
+        <div class="container">
+            <div class="row g-5 mb-5">
+                <!-- Contact -->
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-4" style="font-size: 1.1rem;">Contact</h5>
+                    <p class="mb-2">
+                        <a href="mailto:contact@kingdomscars.ch" class="text-white text-decoration-none">contact@kingdomscars.ch</a>
+                    </p>
+                    <p class="mb-2">
+                        <a href="tel:+41221234567" class="text-white text-decoration-none">+41 22 123 45 67</a>
+                    </p>
+                    <p style="font-size: 0.95rem;">
+                        Avenue de la Concorde 123<br>
+                        1200 Genève, Suisse
+                    </p>
+                </div>
+
+                <!-- Réseaux Sociaux -->
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-4" style="font-size: 1.1rem;">Réseaux sociaux</h5>
+                    <p class="mb-2">
+                        <a href="#" class="text-white text-decoration-none">LinkedIn</a>
+                    </p>
+                    <p class="mb-2">
+                        <a href="#" class="text-white text-decoration-none">Facebook</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white text-decoration-none">X</a>
+                    </p>
+                </div>
+
+                <!-- Menu -->
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-4" style="font-size: 1.1rem;">Menu</h5>
+                    <p class="mb-2">
+                        <a href="#" class="text-white text-decoration-none nav-link-spa" data-page="page-home">Accueil</a>
+                    </p>
+                    <p class="mb-2">
+                        <a href="#" class="text-white text-decoration-none nav-link-spa" data-page="page-about">À propos</a>
+                    </p>
+                    <p class="mb-2">
+                        <a href="#" class="text-white text-decoration-none nav-link-spa" data-page="page-vehicles">Véhicules</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white text-decoration-none nav-link-spa" data-page="page-contact">Nous contacter</a>
+                    </p>
+                </div>
+
+                <!-- Légal -->
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-4" style="font-size: 1.1rem;">Légal</h5>
+                    <p class="mb-2">
+                        <a href="#" class="text-white text-decoration-none">Politique de confidentialité</a>
+                    </p>
+                    <p class="mb-2">
+                        <a href="#" class="text-white text-decoration-none">Déclaration d'accessibilité</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white text-decoration-none">Mentions légales</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div style="border-top: 1px solid #333; padding-top: 30px; text-align: right; color: #999; font-size: 0.9rem;">
+                <p>© 2026 Kingdom's Cars. Tous droits réservés.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Code injected by live-server -->
+
+    <script>
+        // Parallaxe du hero (protégée si l'élément n'existe pas)
+        window.addEventListener('scroll', function () {
+            const hero = document.querySelector('[data-parallax="true"]');
+            if (hero) {
+                hero.style.backgroundPosition = 'top ' + (window.scrollY * 0.5) + 'px';
+            }
+        });
+
+        // Navigation entre les pages (accueil, véhicules, à propos, contact)
+        function showPage(pageId) {
+            document.querySelectorAll('.hidden-section').forEach(p => p.classList.remove('active'));
+            const home = document.getElementById('page-home');
+            if (home) home.style.display = 'none';
+            const target = document.getElementById(pageId);
+            if (target) {
+                target.classList.add('active');
+                window.scrollTo(0, 0);
+            }
+        }
+
+        function goTo(pageId) {
+            if (pageId === 'page-home') {
+                document.querySelectorAll('.hidden-section').forEach(p => p.classList.remove('active'));
+                const home = document.getElementById('page-home');
+                if (home) home.style.display = '';
+                window.scrollTo(0, 0);
+            } else {
+                showPage(pageId);
+            }
+        }
+
+        document.querySelectorAll('[data-page]').forEach(el => {
+            el.addEventListener('click', function (e) {
+                e.preventDefault();
+                goTo(this.getAttribute('data-page'));
+                const offcanvas = document.querySelector('#offcanvasNavbar');
+                if (offcanvas && window.bootstrap) {
+                    bootstrap.Offcanvas.getOrCreateInstance(offcanvas).hide();
+                }
+            });
+        });
+
+        // Liens « # » sans destination : ne pas faire sauter la page
+        document.querySelectorAll('a[href="#"]').forEach(a => {
+            a.addEventListener('click', e => e.preventDefault());
+        });
+    </script>
+    </body>
+    </html>
